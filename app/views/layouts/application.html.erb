@@ -7,9 +7,16 @@
 
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+
   </head>
 
   <body>
+  <div class="header">
+    <p>Simple AirBnB</p>
+    <%= link_to "Add flat", new_flat_path %>
+  </div>
+  <div class="container">
     <%= yield %>
+  </div>
   </body>
 </html>
